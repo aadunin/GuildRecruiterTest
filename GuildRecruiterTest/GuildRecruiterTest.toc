@@ -5,6 +5,7 @@
 ## Version: 1.1.0
 ## Dependencies: GuildRecruiter
 ## LoadOnDemand: 0
+## SavedVariables: GuildRecruiterTest_JUnit
 
 GuildRecruiterTest_Core.lua
 GuildRecruiterTest_Spec.lua
