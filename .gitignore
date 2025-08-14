@@ -1,0 +1,18 @@
+# Игровые настройки и сэйвы
+WTF/
+Cache/
+Logs/
+Screenshots/
+
+# SavedVariables текущего аддона
+GuildRecruiterTest.lua
+GuildRecruiterTest.lua.bak
+
+# OS/IDE мусор
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+*.swp
+.idea/
+.vscode/
