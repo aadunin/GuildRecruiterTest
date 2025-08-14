@@ -1,18 +1,43 @@
-# Игровые настройки и сэйвы
+# ========== World of Warcraft ==========
 WTF/
 Cache/
 Logs/
 Screenshots/
 
-# SavedVariables текущего аддона
-GuildRecruiterTest.lua
-GuildRecruiterTest.lua.bak
+# SavedVariables
+SavedVariables/
+*.lua.bak
+*.bak
 
-# OS/IDE мусор
+# ========== Сборка и релизы ==========
+dist/
+build/
+release/
+releases/
+*.zip
+
+# ========== IDE/OS-мусор ==========
 .DS_Store
 Thumbs.db
-*.bak
-*.tmp
+desktop.ini
+Icon?
 *.swp
+*.swo
+*.tmp
+*.temp
+*.orig
+*.rej
+*~
+*.code-workspace
 .idea/
 .vscode/
+
+# ========== Lua/инструменты ==========
+luac.out
+*.luac
+
+# ========== Тестовые артефакты ==========
+coverage/
+.junit/
+junit.xml
+test-output/
