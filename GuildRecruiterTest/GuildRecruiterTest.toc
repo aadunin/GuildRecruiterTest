@@ -1,0 +1,10 @@
+## Interface: 50500
+## Title: GuildRecruiterTest
+## Notes: In-game test runner for GuildRecruiter (progress bar, summary, skip)
+## Author: Alexander (aadunin) + Copilot
+## Version: 1.1.0
+## Dependencies: GuildRecruiter
+## LoadOnDemand: 0
+
+GuildRecruiterTest_Core.lua
+GuildRecruiterTest_Spec.lua
