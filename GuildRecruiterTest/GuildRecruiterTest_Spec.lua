@@ -1,12 +1,10 @@
 -- GuildRecruiterTest_Spec.lua
 -- Набор тестов: команды, каналы, рандомизация, UX-сообщения
--- Использует t.skip(reason) для аккуратных пропусков
 
 local T = GuildRecruiterTest
 
 -- Алиас на /gru
 local function GRU(cmd)
-    -- В GuildRecruiter теперь slash-команда зарегистрирована как "GUILDRECRUITER"
     local handler = SlashCmdList["GUILDRECRUITER"] or SlashCmdList["GRU"]
     if handler then
         handler(cmd or "")
@@ -18,7 +16,6 @@ end
 -- Хелперы
 local function resetState()
     GR_Settings = {
-        -- синхронизация с дефолтом из GuildRecruiter.lua
         message = "🌟 Гильдия Местные Деды набирает игроков! Пишите /w для деталей.",
         channelType = "SAY",
         channelId = nil,
@@ -29,7 +26,7 @@ local function resetState()
     T._sent = {}
 end
 
--- Утилита для очистки цветовых кодов (чтобы паттерны в тестах не спотыкались)
+-- Удаляем цветовые коды
 local function stripColors(s)
     return (tostring(s):gsub("|c%x%x%x%x%x%x%x%x", ""):gsub("|r", ""))
 end
